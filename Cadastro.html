@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro-Livraria</title>
+	<meta charset="utf-8">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-GIcXw8rYyx4xrVfccSt7E7KGw2nAFDG/TNLq9NMPHKH5Rv3aqk6laThLgQFQnIYF" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+  <a class="navbar-brand" href="#"><h2>Cadastro</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+</div>
+
+
+<div class="container">
+  
+
+<form>
+  <fieldset>
+ 
+           <legend>Dados Pessoais</legend>
+ 
+    <div class="form-group">
+ 
+      <label for="nome">Nome Completo</label>
+      <input type="text" class="form-control"  id ="nome" aria-describedby="nomeHelp"  >
+ 
+    </div>
+ 
+    <div>
+ 
+      <label>CPF:</label>
+      <input type="text" name="cpf" size="3" maxlength="3">.<input type="text" name="cfp2" size="3" maxlength="3">.<input type="text" name="cpf3" size="3"  maxlength="3">-<input type="text" name="cpf4" size="2" maxlength="2" >
+ 
+    </div>
+ 
+    <div>
+      <label>Data de Nascimento : </label>
+ 
+      <select size="1">
+ 
+  <option>dd</option>
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+  <option>30</option>
+  <option>31</option>
+ 
+  </select> / <select size="1">
+ 
+   <option>mm</option> 
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+ 
+  </select> / 
+    
+  <input type="tex" name="ano" size="4" maxlength="4" placeholder="aaa">
+ 
+  
+    
+    </div>
+    
+     <div class="form-group">
+      <label for="sexo">Sexo</label>
+      <select  id="sexo" class="form-text">
+    
+        <option>--Selecione--</option>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+    
+        </select>
+         </div>
+    
+         <div class="form-group">
+         <label for="na">Nacionalidade</label>
+         <select class="form-text id="na">
+    
+           <option>--Selecione--</option>
+           <option>Brasileiro(a)</option>
+           <option>Estrangeiro(a)</option>
+    
+         </select>
+         </div>
+    
+    <div class="form-group">
+    
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" size="40" class="form-text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex:Email00@Livros.com.br">
+      <small id="emailHelp" class="form-text text-muted">*Campo Obrigatório</small>
+    
+    </div>
+    
+    <div class="form-group">
+    
+      <label for="exampleInputPassword1">Senha</label>
+      <input type="password" class="form-text" id="senha" size="40" minlength="6" placeholder="Insira a Senha.">
+      <small id="senha" class="form-text text-muted">Obs:Possuir no minímo 6 letras.</small>
+    
+    </div>
+    
+    <div class="form-group">
+    
+      <label for="pass">Confirme a Senha</label>
+      <input type="password" class="form-text" name="pass" size="40" minlength="6" placeholder="Confirme a Senha">
+
+    </div>
+
+    <div>
+      <label>Telefone: </label>
+      <input type="text" name="cel" size="16" maxlength="11" placeholder="(00)12345-6789">
+      <small id="cel" class="form-text text-muted">*(Opcional)</small>
+      <small id="cel" class="form-text text-muted">* Somente os números</small>
+    </div>
+   
+ 
+        <legend>Dados de Endereço</legend>
+   
+    <div class="form-group">
+    <label for="estado">Estado</label>
+    <select  id="estado">
+   
+    <option>--Selecione--</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AM">Amazonas</option>
+    <option value="AP">Amapá</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espiríto Santos</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RO">Rondônia</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SE">Sergipe</option>
+    <option value="SP">São Paulo</option>
+    <option value="TO">Tocatins</option>
+   
+    </select>
+    </div>
+    <div align="left">
+      <label for="cidade">Cidade</label>
+      <input type="text" name="cidade" class="form-text" size="40">
+
+    </div>
+
+    <div>
+      
+      <label>CEP:</label>
+      <input type="text" name="cep"  size="8" maxlength="7">
+
+    </div>
+
+    <div class="form-group">
+      <label for="rua">Rua:</label>
+      <input type="text" name="rua" class="form-text" size="40" >
+      <label for="number">Número:</label>
+      <input type="number" name="number" class="form-text" size="20">
+      <label for="com">Complemento</label>
+      <input type="text" name="com" class="form-text" placeholder="Ex: casa1 ou ap 302">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleTextarea">Ponto de Referência:</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      <small id="exampleTextarea" class="form-text text-muted">*Obs: Lugares conhecidos</small>
+    </div>
+   
+
+      </div>
+  
+     
+  
+      <div class="container">
+       <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" >
+          Aceito receber e-mail de promoções de livros e novos lançamentos.
+        </label>
+      </div>
+      <div class="container">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" >
+          Concordo com os termos de políticas e privacidade.
+        </label>
+       </div>  
+      </div>
+    <fieldset class="container">
+    <button type="submit" class="btn btn-primary">Avançar</button>
+  </fieldset>
+</form>
+</div>
+
+</body>
+</html>

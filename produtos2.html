@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NI Fest</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-IzI0oYQkUWBlg1pHwxuQHkY3lDjpB6aHpvi1eomAYMJlD7yk+TvMZoRXt0Wk31WJ" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal" id="modalLogin"> <!-- Criar um id e direcionar no data-target no button  -->
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="Email1">Email</label>
+            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Insira seu email">
+          </div>
+          <div class="form-group">
+            <label for="Password1">Senha</label>
+            <input type="password" class="form-control" id="Password1" placeholder="Insira sua Senha">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Logar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-target="#modalLogin">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">NI Fest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarColor01">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="produtos.html">Produtos</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="categoria.html">Categorias</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="sobre.html">Sobre Nós</a>
+     </li>
+   </ul>
+   <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" size="40" type="text" placeholder="Encontre o seu Livro">
+    <button class="btn btn-primary my-2 my-sm-0 " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+  </form>
+  <ul class="navbar-nav login">
+    <li class="nav-item ">
+     <a class="nav-link" href="#modalLogin" data-toggle="modal" data-target="#modalLogin"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>
+   </li>
+ </ul>
+</div>
+</nav>
+<div class="esquerda" id="esquerda">
+  <p class="">Categorias</p>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Autoajuda" href="#autoajuda">Autoajuda</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Espiritismo" href="#espiritismo">Espiritismo</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Literatura Brasileira" href="#literatura">Literatura Brasileira</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Esportes e Lazer" href="#lazer">Esportes e Lazer</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Gastronomia" href="#gastronomia">Gastronomia</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="HQs" href="#hqs">HQs</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Informática" href="#informatica">Informática</a>
+    </li> 
+  </ul> 
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Religião" href="#religiao">Religião</a>
+    </li> 
+  </ul>
+</div>
+<div class="container">
+  <div class="row conteudo">
+   <div class="col-xl-4">
+    <div class="produto10" id="lazer">
+      <img class="img-fluid" id="guinnessworldrecords" src="images/guinnessworldrecords.png" alt="Guinness World Records 2018" />
+      <a href="guinnessworldrecords.html" target="_blank" title="Guinness World Records 2018" ><h3 class="text-center">Guinness World Records 2018</a> </h3>
+      <p id="autor" >HarperCollins</p>
+      <p>R$52,90</p>
+      <a href="#">Adicionar ao Carrinho</a>
+      <a href="guinnessworldrecords.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+    </div>  
+  </div>
+  <div class="col-xl-4">
+    <div class="produto11" id="lazer">
+      <img class="img-fluid" id="passatempo" src="images/passatempo.jpg" alt="Passatempos Com Felipe Neto" />
+      <a href="passatempo.html" target="_blank" title="Passatempos Com Felipe Neto" ><h3 class="text-center">Passatempos Com Felipe Neto</a> </h3>
+      <p id="autor" >Felipe Neto</p>
+      <p>R$5,00</p>
+      <a href="#">Adicionar ao Carrinho</a>
+      <a href="passatempo.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+    </div> 
+  </div>
+  <div class="col-xl-4">
+    <div class="produto12" id="lazer">
+      <img class="img-fluid" id="365diasparaplantar" src="images/365diasparaplantar.jpg" alt="365 Dias Para Plantar" />
+      <a href="365diasparaplantar.html" target="_blank" title="365 Dias Para Plantar" ><h3 class="text-center">365 Dias Para Plantar</a> </h3>
+      <p id="autor" >Carol Costa</p>
+      <p>R$41,90</p>
+      <a href="#">Adicionar ao Carrinho</a>
+      <a href="365diasparaplantar.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+    </div>  
+  </div>
+</div>
+<div class="row conteudo">
+ <div class="col-xl-4">
+  <div class="produto13" id="gastronomia">
+    <img class="img-fluid" id="confeitariaescalafobetica" src="images/confeitariaescalafobetica.png" alt="Confeitaria Escalafobética" />
+    <a href="confeitariaescalafobetica.html" target="_blank" title="Confeitaria Escalafobética" ><h3 class="text-center">Confeitaria Escalafobética</a> </h3>
+    <p id="autor" >Raiza Costa</p>
+    <p>R$66,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="confeitariaescalafobetica.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto14" id="gastronomia">
+    <img class="img-fluid" id="adietadamente" src="images/adietadamente.jpg" alt="A Dieta da Mente" />
+    <a href="adietadamente.html" target="_blank" title="A Dieta da Mente" ><h3 class="text-center">A Dieta da Mente</a> </h3>
+    <p id="autor" >Dr.David Perlmutter</p>
+    <p>R$23,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="adietadamente.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div> 
+</div>
+<div class="col-xl-4">
+  <div class="produto15" id="gastronomia">
+    <img class="img-fluid" id="laroussedecerveja" src="images/laroussedacerveja.jpg" alt="Extraordinário" />
+    <a href="laroussedecerveja.html" target="_blank" title="Larousse da Cerveja" ><h3 class="text-center">Larousse da Cerveja</a> </h3>
+    <p id="autor" >Ronaldo Morado</p>
+    <p>R$71,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="laroussedecerveja.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+</div>
+<div class="row conteudo">
+ <div class="col-xl-4">
+  <div class="produto16" id="hqs">
+    <img class="img-fluid" id="piadamortal" src="images/piadamortal.jpg" alt="Piada Mortal" />
+    <a href="piadamortal.html" target="_blank" title="Piada Mortal" ><h3 class="text-center">Piada Mortal</a> </h3>
+    <p id="autor" >Alan Moore</p>
+    <p>R$15,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="piadamortal.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto17" id="hqs">
+    <img class="img-fluid" id="batman" src="images/batman.jpg" alt="Batman - O Cavaleiro das Trevas" />
+    <a href="batman.html" target="_blank" title="Batman - O Cavaleiro das Trevas" ><h3 class="text-center">Batman - O Cavaleiro das Trevas</a> </h3>
+    <p id="autor" >Frank Miller/Klaus Janson/Lyn Varley</p>
+    <p>R$58,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="batman.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div> 
+</div>
+<div class="col-xl-4">
+  <div class="produto18" id="hqs">
+    <img class="img-fluid" id="deathnote" src="images/deathnote.png" alt="Death Note Black Edition Vol.7" />
+    <a href="deathnote.html" target="_blank" title="Death Note Black Edition Vol.7" ><h3 class="text-center">Death Note Black Edition Vol.7</a> </h3>
+    <p id="autor" >Takeshi Obata/Ohba Tsugumi</p>
+    <p>R$25,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="deathnote.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+</div>
+<div class="row conteudo">
+ <div class="col-xl-4">
+  <div class="produto19" id="informatica">
+    <img class="img-fluid" id="linux" src="images/linux.jpg" alt="Linux - A Bíblia" />
+    <a href="linux.html" target="_blank" title="Linux - A Bíblia" ><h3 class="text-center">Linux - A Bíblia</a> </h3>
+    <p id="autor" >Christopher Negus</p>
+    <p>R$131,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="linux.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto20" id="informatica">
+    <img class="img-fluid" id="naomefacapensar" src="images/naomefacapensar.png" alt="Não Me Faça Pensar" />
+    <a href="naomefacapensar.html" target="_blank" title="Não Me Faça Pensar" ><h3 class="text-center">Não Me Faça Pensar</a> </h3>
+    <p id="autor" >Steve Krug</p>
+    <p>R$70,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="naomefacapensar.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div> 
+</div>
+<div class="col-xl-4">
+  <div class="produto21" id="informatica">
+    <img class="img-fluid" id="cloudcomputing" src="images/cloudcomputing.jpg" alt="Cloud Computing" />
+    <a href="cloudcomputing.html" target="_blank" title="Cloud Computing" ><h3 class="text-center">Cloud Computing</a> </h3>
+    <p id="autor" >Leonardo Molinari</p>
+    <p>R$45,00</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="cloudcomputing.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+</div>
+<div class="row conteudo">
+ <div class="col-xl-4">
+  <div class="produto22" id="religiao">
+    <img class="img-fluid" id="crerounaocrer" src="images/crerounaocrer.png" alt="Crer ou Não Crer" />
+    <a href="crerounaocrer.html" target="_blank" title="Crer ou Não Crer" ><h3 class="text-center">Crer ou Não Crer</a> </h3>
+    <p id="autor" >Pe. Fábio de Melo/Leandro Karnal</p>
+    <p>R$19,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="crerounaocrer.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto23" id="religiao">
+    <img class="img-fluid" id="paraqueestounaterra" src="images/paraqueestounaterra.png" alt="Para Que Estou na Terra" />
+    <a href="paraqueestounaterra.html" target="_blank" title="Para que estou na Terra" ><h3 class="text-center">Para que estou na Terra</a> </h3>
+    <p id="autor" >Rick Warren</p>
+    <p>R$18,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="paraqueestounaterra.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div> 
+</div>
+<div class="col-xl-4">
+  <div class="produto24" id="religiao">
+    <img class="img-fluid" id="namoroblindado" src="images/namoroblindado.png" alt="Namoro Blindado" />
+    <a href="namoroblindado.html" target="_blank" title="Namoro Blindado" ><h3 class="text-center">Namoro Blindado</a> </h3>
+    <p id="autor" >Renato/Cristiane Cardoso</p>
+    <p>R$20,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="namoroblindado.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+</div>
+<div class="segunda-pagina">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#">&laquo;</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="produtos.html">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="produtos2.html">2</a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link" href="">&raquo;</a>
+    </li>
+  </ul>
+</div>
+</div>
+</body>
+</html>

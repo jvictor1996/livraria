@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NI Fest</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-IzI0oYQkUWBlg1pHwxuQHkY3lDjpB6aHpvi1eomAYMJlD7yk+TvMZoRXt0Wk31WJ" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Modal -->
+	<div class="modal" id="modalLogin"> <!-- Criar um id e direcionar no data-target no button  -->
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Login</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="Email1">Email</label>
+						<input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Insira seu email">
+					</div>
+					<div class="form-group">
+						<label for="Password1">Senha</label>
+						<input type="password" class="form-control" id="Password1" placeholder="Insira sua Senha">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Logar</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" data-target="#modalLogin">Cancelar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Modal -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">NI Fest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarColor01">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="produtos.html">Produtos</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="categoria.html">Categorias</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="sobre.html">Sobre Nós</a>
+     </li>
+   </ul>
+   <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" size="40" type="text" placeholder="Encontre o seu Livro">
+    <button class="btn btn-primary my-2 my-sm-0 " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+  </form>
+  <ul class="navbar-nav login">
+    <li class="nav-item ">
+     <a class="nav-link" href="#modalLogin" data-toggle="modal" data-target="#modalLogin"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>
+   </li>
+ </ul>
+</div>
+</nav>
+<div class="esquerda" id="esquerda">
+  <p class="">Categorias</p>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Autoajuda" href="#autoajuda">Autoajuda</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Espiritismo" href="#espiritismo">Espiritismo</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Literatura Brasileira" href="#literatura">Literatura Brasileira</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Esportes e Lazer" href="#lazer">Esportes e Lazer</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Gastronomia" href="#gastronomia">Gastronomia</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="HQs" href="#hqs">HQs</a>
+    </li> 
+  </ul>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Informática" href="#informatica">Informática</a>
+    </li> 
+  </ul> 
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a title="Religião" href="#religiao">Religião</a>
+    </li> 
+  </ul>
+</div>
+<div class="container">
+  <div class="row conteudo">
+   <div class="col-xl-4">
+    <div class="produto1" id="autoajuda">
+      <div class="text-center">
+        <img class="img-fluid" id="aansiedade" src="images/aansiedade.png" alt="A Ansiedade" />
+        <a href="aansiedade.html" target="_blank" title="A Ansiedade" ><h3 class="text-center">A Ansiedade</a></h3>
+        <p id="autor" >Augusto Cury</p>
+        <p>R$8,90</p>
+        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true">Adicionar ao Carrinho</i></a>
+        <br>
+        <a href="aansiedade.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+      </div> 
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <div class="produto2" id="autoajuda">
+      <img class="img-fluid" id="asutilartedeligarofodase" src="images/asutilartedeligarofodase.jpg" alt="A Sutil Arte de Ligar o Foda-se" />
+      <a href="asutilartedeligarofodase.html" target="_blank" title="A Sutil Arte de Ligar o Foda-se" ><h3 class="text-center">A Sutil Arte de Ligar o Foda-se</a> </h3>
+      <p id="autor" >Mark Manson</p>
+      <p>R$22,90</p>
+      <a href="#">Adicionar ao Carrinho</a>
+      <a href="asutilartedeligarofodase.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+    </div> 
+  </div>
+  <div class="col-xl-4">
+    <div class="produto3" id="autoajuda">
+      <img class="img-fluid" id="opoderdoagora" src="images/opoderdoagora.jpg" alt="O Poder do agora" />
+      <a href="opoderdoagora.html" target="_blank" title="O Poder do agora" ><h3 class="text-center">O Poder do agora</a> </h3>
+      <p id="autor" >Eckhart Tolle</p>
+      <p>R$19,90</p>
+      <a href="#">Adicionar ao Carrinho</a>
+      <a href="opoderdoagora.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+    </div>  
+  </div>
+</div>
+<div class="row conteudo">
+ <div class="col-xl-4">
+  <div class="produto4" id="espiritismo">
+    <img class="img-fluid" id="olivrodosespiritos" src="images/olivrodosespiritos.jpg" alt="O Livro dos Espíritos" />
+    <a href="olivrodosespiritos.html" target="_blank" title="O Livro dos Espíritos" ><h3 class="text-center">O Livro dos Espíritos</a> </h3>
+    <p id="autor" >Allan Kardec</p>
+    <p>R$7,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="olivrodosespiritos.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto5" id="espiritismo">
+    <img class="img-fluid" id="todomundotemumanjodaguarda" src="images/todomundotemumanjodaguarda.jpg" alt="Todo Mundo Tem Um Anjo da Guarda" />
+    <a href="todomundotemumanjodaguarda.html" target="_blank" title="Todo Mundo Tem Um Anjo da Guarda" ><h3 class="text-center">Todo Mundo Tem Um Anjo da Guarda</a> </h3>
+    <p id="autor" >Pedro Siqueira</p>
+    <p>R$17,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="todomundotemumanjodaguarda.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto6" id="espiritismo">
+    <img class="img-fluid" id="viagemespiritual" src="images/viagemespiritual.png" alt="Viagem Espiritual" />
+    <a href="viagemespiritual.html" target="_blank" title="Viagem Espiritual" ><h3 class="text-center">Viagem Espiritual</a> </h3>
+    <p id="autor" >Wagner Borges</p>
+    <p>R$54,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="viagemespiritual.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+</div>
+<div class="row conteudo">
+ <div class="col-xl-4">
+  <div class="produto7" id="literatura">
+    <img class="img-fluid" id="felipeneto" src="images/felipeneto.jpg" alt="A Trajetória de Um Dos Maiores Youtubers do Brasil" />
+    <a href="felipeneto.html" target="_blank" title="A Trajetória de Um Dos Maiores Youtubers do Brasil" ><h3 class="text-center">A Trajetória de Um Dos Maiores Youtubers do Brasil</a></h3>
+    <p id="autor" >Felipe Neto</p>
+    <p>R$9,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="felipeneto.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto8" id="literatura">
+    <img class="img-fluid" id="silviosantos" src="images/silviosantos.png" alt="Silvio Santos A Biografia" />
+    <a href="silviosantos.html" target="_blank" title="Silvio Santos A Biografia" ><h3 class="text-center">Silvio Santos A Biografia</a> </h3>
+    <p id="autor" >Silvio Santos</p>
+    <p>R$23,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="silviosantos.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+<div class="col-xl-4">
+  <div class="produto9" id="literatura">
+    <img class="img-fluid" id="queridodanese" src="images/queridodanese.png" alt="Querido Dane-se" />
+    <a href="queridodanese.html" target="_blank" title="Querido Dane-se" ><h3 class="text-center">Querido Dane-se</a> </h3>
+    <p id="autor" >Kéfera Buchmann</p>
+    <p>R$22,90</p>
+    <a href="#">Adicionar ao Carrinho</a>
+    <a href="queridodanese.html"><button type="button" id="botao" class="btn btn-outline-primary">Ver detalhes</button></a>
+  </div>  
+</div>
+</div>
+<div class="segunda-pagina">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#">&laquo;</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="produtos.html">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="produtos2.html">2</a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#">&raquo;</a>
+    </li>
+  </ul>
+</div>
+</div>
+</body>
+</html>
